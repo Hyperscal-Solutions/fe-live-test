@@ -13,48 +13,23 @@ Clone the repo and install dependencies:
 pnpm install
 ```
 
-Then install **one of the testing stacks** depending on the task you’re asked to do.
 
-### For Vitest
-```bash
-pnpm add -D vitest @testing-library/react @testing-library/user-event @testing-library/jest-dom jsdom
-```
+All required testing stacks are already installed and configured.
 
-Run:
-```bash
-pnpm test
-pnpm test:watch
-```
+### Test Commands
 
-### For Jest
-```bash
-pnpm add -D jest ts-jest @testing-library/react @testing-library/user-event @testing-library/jest-dom
-```
+- **Vitest (unit/integration):**
+  - Run all tests: `pnpm test:vitest`
+  - Watch mode: `pnpm test:vitest:watch`
+- **Jest (unit/integration):**
+  - Run all tests: `pnpm test:jest`
+  - Watch mode: `pnpm test:jest:watch`
+- **Playwright (E2E):**
+  - Run all tests: `pnpm test:playwright`
+- **Cypress (E2E):**
+  - Open Cypress UI: `pnpm test:cypress`
 
-Run:
-```bash
-npx jest
-```
-
-### For Playwright
-```bash
-pnpm add -D @playwright/test
-```
-
-Run:
-```bash
-npx playwright test
-```
-
-### For Cypress
-```bash
-pnpm add -D cypress
-```
-
-Run:
-```bash
-npx cypress open
-```
+Use the appropriate command for the stack you want to use. No additional installation is needed.
 
 ---
 
